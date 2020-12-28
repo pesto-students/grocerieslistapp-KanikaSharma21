@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <h2>Grocery App</h2>
+
+    <div id="signup" class="bg-img">
+      <form onsubmit="checkExistUser()" class="container" return false;">
+        <label for="userName">UserName:</label><br />
+        <input type="text" id="username" name="userName" onkeyup="stoppedTyping()" />
+        <p />
+        <input class="btn" id="submitButton" type="submit" value="Login" disabled />
+      </form>
+    </div>
+
+    <div id="container" class="add-grocery">
+      <form>
+        <h1>Grocery List<i class="grocery-items" aria-hidden="true"></i></h1>
+        <input type="text" placeholder="Add new item" class="grocery-input" />
+
+        <button type="submit" class="add-button">Add</button>
+      </form>
+
+      <ul class="todo-items"></ul>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/grocer.js"></script>
+  </body>
+</html>
